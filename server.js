@@ -25,4 +25,5 @@ app.use((req, res, next) => {
 app.post('/post', function (req, res) {
     res.send('POST request to the homepage')
   })
-app.listen(3000, () => console.log('Exampl e app listening on port 3000!'))
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log('Exampl e app listening on port 3000!'))
